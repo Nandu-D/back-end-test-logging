@@ -1,13 +1,11 @@
 package com.example.backendtestlogging.controllers;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.example.backendtestlogging.model.client_logs.Action;
 import com.example.backendtestlogging.model.client_logs.Properties;
 import com.example.backendtestlogging.model.client_logs.UserLog;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

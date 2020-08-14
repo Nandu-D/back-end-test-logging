@@ -1,8 +1,6 @@
 package com.example.backendtestlogging.controllers;
 
 import com.example.backendtestlogging.exceptions.MissingCrucialLogInfoException;
-import com.example.backendtestlogging.model.client_logs.Action;
-import com.example.backendtestlogging.model.client_logs.Properties;
 import com.example.backendtestlogging.model.client_logs.UserLog;
 import com.example.backendtestlogging.model.client_logs.db_model.UserActionLog;
 import com.example.backendtestlogging.services.ClientSideLoggerService;
@@ -12,9 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Slf4j
 @RestController

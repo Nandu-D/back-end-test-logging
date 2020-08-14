@@ -1,6 +1,5 @@
 package com.example.backendtestlogging.services;
 
-import com.example.backendtestlogging.config.ElasticsearchConfig;
 import com.example.backendtestlogging.exceptions.ArgumentParsingException;
 import com.example.backendtestlogging.model.client_logs.Action;
 import com.example.backendtestlogging.model.client_logs.Properties;
@@ -22,10 +21,6 @@ import org.elasticsearch.index.query.TermQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
